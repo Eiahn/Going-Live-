@@ -1,0 +1,29 @@
+{
+  "content": "{{ChannelName}} has gone live on Twitch!",
+  "embeds": [{
+    "title": "{{ChannelUrl}}",
+    "url": "{{ChannelUrl}}",
+    "color": 6570404,
+    "footer": {
+      "text": "{{CreatedAt}}"
+    },
+    "image": {
+      "url": "https://static-cdn.jtvnw.net/previews-ttv/live_user_{{ChannelName}}-1280x720.jpg"
+    },
+    "author": {
+      "name": "{{ChannelName}} is now streaming!"
+    },
+    "fields": [
+      {
+        "name": "Playing",
+        "value": "{{Game}}",
+        "inline": true
+      },
+      {
+        "name": "Started at (streamer timezone)",
+        "value": "{{CreatedAt}}",
+        "inline": true
+      }
+    ]
+  }]
+}
